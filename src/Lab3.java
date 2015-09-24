@@ -7,22 +7,22 @@ public class Lab3
 	{
 		Scanner input = new Scanner(System.in);
 
-		int num1, num2;
+		String ans1, ans2;
 
-		System.out.print("Are you hungry? (Enter 1 for YES, 0 for NO): ");
-		num1 = input.nextInt();
+		System.out.print("Are you hungry? (Enter YES or NO): ");
+		ans1 = input.next();
 
-		if (num1 == 0)
+		if (ans1.equals("NO"))
 			System.out.println("OK. Bye!");
 		else
 		{
 			System.out.print("Get in line!\nLet's get some lunch!\nAre you thirsty? (Enter 1 for YES, 0 for NO): ");
-			num1 = input.nextInt();
-			if (num1 == 1)
+			ans1 = input.next();
+			if (ans1.equals("YES"))
 			{
-				System.out.print("Have you eaten breakfast? (Enter 1 for YES, 0 for NO): ");
-				num2 = input.nextInt();
-				if (num2 == 1)
+				System.out.print("Have you eaten breakfast? (Enter YES or NO): ");
+				ans2 = input.next();
+				if (ans2.equals("YES"))
 					System.out.print("OK. Let's get some Diet Coke!\nNow eat!\n");
 				else
 					System.out.print("OK. Let's get some Coke!\nNow eat!\n");
